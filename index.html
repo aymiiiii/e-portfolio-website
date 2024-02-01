@@ -6,55 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/spline-sans" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ee56d8f4b5.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="Images/LOGO.png" class="LOGO">
+            <img src="Images/logoname.png" class="LOGO">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
         </nav>
         <div class="header-text">
-            <p>Video Editor</p>
-            <h1>Hi, I'm <span>Aimee Rose</span></h1>
+            <h3>Hello! I am</h3>
+            <h1>Aimee Rose</h1>
+            <h3>And I'm a <span>Video Editor</span></h3>
             <p>"Editing is where imagination meets reality,<br>shaping moments into masterpieces."</p>
-        </div>
+            
+            <a href="https://web.facebook.com/aimeefernandoballatan/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UC04xF88SEmEO_NMnltLu3iA"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/aymiiiii"><i class="fa-brands fa-github"></i></a>
+            
+        </div>  
     </div>
 </div>
+
 <!---------about--------->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-column-1">
-                <img src="Images/USER.png">
+                <img src="Images/userimage.png">
             </div>
             <div class="about-column-2">
-                <h1 class="sub-title">About Me</h1>
+                <h1 class="sub-title">About <span>Me</span></h1>
                 <p>I'm Aimee Rose, a dedicated Information Technology student with a profound passion for unraveling 
                 the mysteries of the digital realm while simultaneously indulging in the artistry of video editing. 
                 A passionate video editor with a flair for crafting captivating visual narratives. 
                 My journey in the realm of video editing began a year 2020, and since then, I've been on a relentless 
                 quest to bring stories to life through the lens of creativity.</p>  
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links " onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Video Editing</span><br>Short form of videos</li>
-                        <li><span>Virtual Assistant</span><br>Data Entry, Data Encder</li>
-                        <li><span>Graphic Designer</span><br>Creative thumbnail</li>
-                    </ul>
                 </div>
                 <div class="tab-contents active-tab" id="experience">
                     <ul>
@@ -73,10 +76,11 @@
         </div>
     </div>
 </div>
+
 <!--------services---------->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">My <span>Services</span></h1>
         <div class="service-list"> 
             <div>
                 <i class="fa-solid fa-video"></i>               
@@ -86,10 +90,10 @@
                 <a href="#">Learn More</a>
             </div>
             <div>
-                <i class="fa-solid fa-clipboard-question"></i>       
-                <h2>Virtual Assistant</h2>
-                <p>Offering virtual assistant services to streamline your workload. From inbox 
-                management to research wizardry, I'm here to make your life easier. </p>
+                <i class="fa-solid fa-code"></i>       
+                <h2>Progammer</h2>
+                <p>Offering comprehensive programming services, including coding, debugging, 
+                    and software development, to meet diverse client needs.</p>
                 <a href="#">Learn More</a>
             </div>
             <div>
@@ -102,10 +106,106 @@
         </div>
     </div>
 </div>
+
+<!----------skills----------->
+<section id="skills" class="skills">
+    <div class="main-text">
+        <h2>My <span>Skills</span></h2>
+    </div>
+
+    <div class="main-skill">
+        <div class="skillleft">
+            <h3>Technical Skills</h3>
+            <div class="skillbar">
+                <div class="info">
+                    <p>Video Editing</p>
+                    <p>70%</p>
+                </div>
+                <div class="bar">
+                    <span class="video"></span>
+                </div>
+            </div>
+
+            <div class="skillbar">
+                <div class="info">
+                    <p>Graphic Desinging</p>
+                    <p>50%</p>
+                </div>
+                <div class="bar">
+                    <span class="graphic"></span>
+                </div>
+            </div>
+
+            <div class="skillbar">
+                <div class="info">
+                    <p>Programming</p>
+                    <p>40%</p>
+                </div>
+                <div class="bar">
+                    <span class="program"></span>
+                </div>
+            </div>
+
+            <div class="skillbar">
+                <div class="info">
+                    <p>PowerPoint</p>
+                    <p>80%</p>
+                </div>
+                <div class="bar">
+                    <span class="ppt"></span>
+                </div>
+            </div>
+        </div>
+
+            <div class="skillright">
+                <h3>Professional Skills</h3>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Flexibility</div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Confidence</div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">70%</div>
+                        <div class="text">Time Management</div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+
+</section>
+
 <!---------portfolio--------->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My <span>Work</span></h1>
         <div class="work-list">
             <div class="work">
                 <img src="Images/edit.png">
@@ -117,11 +217,12 @@
                 </div>
             </div>
             <div class="work">
-                <img src="Images/virtual.png">
+                <img src="Images/program.png">
                 <div class="layer">
-                    <h3>Virtual Assistance</h3>
-                    <p> This service helps improve productivity, streamline operations, and free up time for clients 
-                    to focus on their core activities.</p>
+                    <h3>Programmer</h3>
+                    <p>In programming, individuals play a key role in designing, writing, testing, and maintaining code 
+                        to develop software applications or systems, employing various programming languages and tools.
+                    </p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -135,16 +236,17 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="button">See More</a>
+        <a href="" class="button">See More</a>
     </div>
 </div>
+
 <!---------contact--------->
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> aimeeballaran22@gmail.com</p>
+                <h1 class="title">Contact <span>Me</span></h1>
+                <p><i class="fa-solid fa-paper-plane"></i> aimeeballatan22@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> +639939509044</p>
                 <div class="social-icons">
                     <a href="https://web.facebook.com/aimeefernandoballatan/"><i class="fa-brands fa-facebook"></i></a>
@@ -184,6 +286,7 @@
 
 </script>
 
+
 <script>
 
     var sidemenu = document.getElementById("sidemenu");
@@ -212,6 +315,9 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
+
+
+
 </body>
-<html>
+<html>>
